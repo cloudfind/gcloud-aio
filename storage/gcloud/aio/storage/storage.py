@@ -338,7 +338,6 @@ class Storage:
             'Content-Length': str(len(metadata)),
             'Content-Type': 'application/json; charset=UTF-8',
             'X-Upload-Content-Type': headers['Content-Type'],
-            'X-Upload-Content-Length': headers['Content-Length']
         })
 
         s = AioSession(session) if session else self.session
